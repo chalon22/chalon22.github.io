@@ -3,6 +3,9 @@
         <style>
             body {
                 margin: 0;
+                background-image: url('funky.jpg');
+                background-size: cover;
+                background-repeat: no-repeat;
             }
         </style>
         <script src = "https://cdn.jsdelivr.net/npm/p5@0.10.2/lib/p5.js"></script src></script>
@@ -12,14 +15,14 @@
             var w = window.innerWidth;
             var h = window.innerHeight;
             function preload() {
-                var bImage = loadImage('funky.jpg')
+                bImage = loadImage('funky.jpg')
             }
             function setup() {
                 createCanvas(w,h,WEBGL);
             }
 
             function draw() {
-                background(bImage);
+                clear();
                 fill('blue');
                 rotateY(mouseX/300)
                 rotateX(mouseY/300)
