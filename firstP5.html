@@ -1,0 +1,37 @@
+<html>
+    <head>
+        <style>
+            body {
+                margin: 0;
+            }
+        </style>
+        <script src = "https://cdn.jsdelivr.net/npm/p5@0.10.2/lib/p5.js"></script src></script>
+    </head>
+    <body>
+        <script>
+            var w = window.innerWidth;
+            var h = window.innerHeight;
+            function setup() {
+                createCanvas(w,h,WEBGL);
+            }
+
+            function draw() {
+                background('white');
+                fill('blue');
+                rotateY(mouseX/300)
+                rotateX(mouseY/300)
+                triangle(30,75,58,20,86,75);
+                rotateY(mouseX/200);
+                rotateX(mouseY/200)
+                triangle(30,75,58,20,86,75);
+                rotateY(mouseX/100)
+                rotateX(mouseY/100)
+                triangle(30,75,58,20,86,75);
+                rotateY(mouseX/50)
+                rotateX(mouseY/50)
+                triangle(30,75,58,20,86,75);
+                noStroke();
+            }
+        </script>
+    <body>
+</html>
