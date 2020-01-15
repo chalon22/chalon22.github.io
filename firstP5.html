@@ -11,12 +11,15 @@
         <script>
             var w = window.innerWidth;
             var h = window.innerHeight;
+            function preload() {
+                var bImage = loadImage('funky.jpg')
+            }
             function setup() {
                 createCanvas(w,h,WEBGL);
             }
 
             function draw() {
-                background('white');
+                background(bImage);
                 fill('blue');
                 rotateY(mouseX/300)
                 rotateX(mouseY/300)
