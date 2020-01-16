@@ -22,8 +22,6 @@
             }
 
             function draw() {
-                clear();
-                fill('blue');
                 rotateY(mouseX/300)
                 rotateX(mouseY/300)
                 triangle(30,75,58,20,86,75);
@@ -36,7 +34,7 @@
                 rotateY(mouseX/50)
                 rotateX(mouseY/50)
                 triangle(30,75,58,20,86,75);
-                noStroke();
+                fill('blue');
             }
         </script>
     <body>
